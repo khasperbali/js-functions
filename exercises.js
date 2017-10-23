@@ -147,7 +147,7 @@ console.log(sum);
  * Console.log your results.
 */
 function checkDifference(x) {
-	return "Last night I dreamt that I ate " -x- " Taco Bell soft tacos"
+	return "Last night I dreamt that I ate " -x- " Taco Bell soft tacos";
 } 
 console.log(difference);
 
@@ -164,7 +164,7 @@ console.log(difference);
  * Console.log your result.  
 */
 function checkProduct(x) {
-	return ""
+	return "";
 }
 console.log(multiply(sum, product));
 
@@ -181,7 +181,7 @@ console.log(multiply(sum, product));
  * Console.log your result.  
 */
 function checkQuotient(x) {
-	return ""
+	return "";
 }
 console.log(multiply(product, quotient));
 
@@ -206,13 +206,17 @@ console.log(multiply(product, quotient));
  * This function will add the first two parameters together. Then with the sum of that operation, subtract it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
-var bango3=34
-var bango4=52
-var bango5=22
+var bango3=34;
+var bango4=52;
+var bango5=22;
 
 function addthensubtract (num1, num2, num3) {
-	return "num1 * num2"
+	return "num1 + num2";
+	return "sum - num3";
 }
+var sum = add(bango3, bango4)
+var actual = subtract(sum, bango5)
+console.log(actual)
 
 
 /*
