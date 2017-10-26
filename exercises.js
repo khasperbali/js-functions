@@ -284,7 +284,7 @@ console.log(eatfood("Khasper", "Balisacan", "Steak"));
  * Create a function that will take in a parameter named `inches`. This function will convert inches to centimeters(cm).
  * Console.log your result. 
 */
-function shoesize (inches) {
+//function shoesize (inches) {
 	
 }
 
@@ -311,7 +311,9 @@ function shoesize (inches) {
  * This function will capitalize only the first letter in the variable phase above. 
  * Console.log your result.
 */
-
+function onecap(str) {
+	
+}
 
 
 /*
