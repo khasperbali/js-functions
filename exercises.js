@@ -296,7 +296,10 @@ console.log(eatfood("Khasper", "Balisacan", "Steak"));
  * Example input: "believe you can and you're halfway there."
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
- 
+ function allcaps(str) {
+ 	return str.toUpperCase();
+ }
+ allcaps("turn this sentece to all caps!")
 
 
 /*
