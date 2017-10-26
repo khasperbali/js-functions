@@ -284,7 +284,9 @@ console.log(eatfood("Khasper", "Balisacan", "Steak"));
  * Create a function that will take in a parameter named `inches`. This function will convert inches to centimeters(cm).
  * Console.log your result. 
 */
-
+function shoesize (inches) {
+	
+}
 
 
 /*
@@ -299,7 +301,7 @@ console.log(eatfood("Khasper", "Balisacan", "Steak"));
  function allcaps(str) {
  	return str.toUpperCase();
  }
- allcaps("turn this sentece to all caps!")
+ console.log (allcaps("turn this sentece to all caps!"));
 
 
 /*
