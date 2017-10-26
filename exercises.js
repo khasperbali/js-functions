@@ -26,8 +26,8 @@ console.log(testGreeting); // printing the output value of the function.
  *
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
- var bango1=96;
- var bango2=21;
+ var bango1 = 96;
+ var bango2 = 21;
 
 
 
@@ -49,7 +49,7 @@ console.log(testGreeting); // printing the output value of the function.
 function add(num1, num2) {
 	return num1 + num2;
 }
-var sum = add(96,21);
+var sum = add(bango1,bango2);
 console.log(sum);
 
 
@@ -147,9 +147,9 @@ console.log(sum);
  * Console.log your results.
 */
 function checkDifference(x) {
-	return "Last night I dreamt that I ate " -x- " Taco Bell soft tacos";
+	return "Last night I dreamt that I ate " +x+ " Taco Bell soft tacos"
 } 
-console.log(difference);
+console.log(checkDifference(difference));
 
 
 
@@ -163,11 +163,10 @@ console.log(difference);
  * This function will multiply the values stored in the sum and product variables.
  * Console.log your result.  
 */
-function checkProduct(x) {
-	return "";
+function checkProduct() {
+	console.log(multiply(sum, product));
 }
-console.log(multiply(sum, product));
-
+checkProduct();
 
 
 /*
@@ -180,11 +179,10 @@ console.log(multiply(sum, product));
  * This function will multiply the values stored in the product and quotient variables.
  * Console.log your result.  
 */
-function checkQuotient(x) {
-	return "";
+function checkQuotient() {
+	console.log(multiply(product, quotient));
 }
-console.log(multiply(product, quotient));
-
+checkQuotient();
 
 
 /*
@@ -206,17 +204,15 @@ console.log(multiply(product, quotient));
  * This function will add the first two parameters together. Then with the sum of that operation, subtract it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
-var bango3=34;
-var bango4=52;
-var bango5=22;
+var bango3 = 23
+var bango4 = 12
+var bango5 = 06
 
 function addthensubtract (num1, num2, num3) {
-	return "num1 + num2";
-	return "sum - num3";
+	console.log(num3 - (num1 + num2));
 }
-var sum = add(bango3, bango4)
-var actual = subtract(sum, bango5)
-console.log(actual)
+addthensubtract(bango3, bango4, bango5);
+
 
 
 /*
@@ -232,7 +228,10 @@ console.log(actual)
  * This function will multiply the first two parameters together. Then with the product of that operation, divide it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
-
+function multiplythendivide (num1, num2, num3) {
+	console.log(num3 / (num1 * num2));
+}
+multiplythendivide(bango3, bango4, bango5);
 
 
 /*
@@ -246,6 +245,11 @@ console.log(actual)
  *
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
+function createfullname (firstname, lastname) {
+	return firstname + lastname;
+}
+createfullname("Khasper", "Balisacan");
+
 
 
 
@@ -262,7 +266,10 @@ console.log(actual)
  * This function will use the previous `createFullName` function above to create a message. For example, if you invoked the function like this: eatFood("Biggie", "Smalls", "Won Ton Soup"); it will display the message "Biggie Smalls eats Won Ton Soup everyday for breakfast."
  * Console.log your result.
  */
-
+function eatfood (firstname, lastname, food) {
+	return firstname + lastname + " likes to eat " + food;
+}
+console.log(eatfood("Khasper", "Balisacan", "Steak"));
 
 
 /************** ENGAGE HYPERDRIVE **************/
